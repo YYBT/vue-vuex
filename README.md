@@ -15,4 +15,8 @@ const store = new Vuex.Store({
     }
   }
 })
+
+this.$emit('my-event', 'emit 来自组件一的消息')
+this.$store.commit('increment', 'vuex 来自组件一的消息')
+
 ```
